@@ -1,0 +1,25 @@
+/* Styles pour la mise en page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    margin-top: 30px;
+}
+ol {
+    padding-left: 20px;
+}
+.classe {
+    background-image: url('musi.jpg');
+    /* Autres styles */
+    width: 200px; /* Largeur de l'image */
+    height: 200px; /* Hauteur de l'image */
+}

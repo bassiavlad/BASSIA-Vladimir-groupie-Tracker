@@ -1,0 +1,27 @@
+/* Styles pour la mise en page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.message {
+    margin-bottom: 20px;
+    color: #FF5733; /* Rouge */
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+.classe {
+    background-image: url('bomaye.jpg');
+    /* Autres styles */
+    width: 200px; /* Largeur de l'image */
+    height: 200px; /* Hauteur de l'image */
+}

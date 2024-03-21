@@ -1,0 +1,47 @@
+{{define "favoris"}}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoris</title>
+    <link rel="stylesheet" href="/static/css/favorie.css">
+</head>
+<body>
+
+    <h1>Ma Playlist Musicale</h1>
+
+    <h2>Ajouter une musique favorite</h2>
+    <form id="favoriteForm">
+        <label for="favoriteSong">Titre de la musique :</label>
+        <input type="text" id="favoriteSong" name="favoriteSong">
+        <label for="artist">Artiste :</label>
+        <input type="text" id="artist" name="artist">
+        <button type="submit">Ajouter</button>
+    </form>  
+
+    <header>
+        <h1>Mes Favoris</h1>
+    </header>
+    <div class="container">
+        <ul id="favoritesList">
+            <!-- Les ressources en favori seront insérées ici -->
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('favoriteForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var song = document.getElementById('favoriteSong').value;
+            var artist = document.getElementById('artist').value;
+            console.log('Musique favorite ajoutée:', song, 'par', artist);
+            // Ici, vous pouvez envoyer les données au backend pour les traiter avec Go
+        });
+    </script>
+    <script src="script.js"></script>
+    <a href="index.html">Accueille
+    </a> 
+
+</body>
+</html>
+{{end}}

@@ -1,0 +1,24 @@
+{{define "detail"}}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de la ressource</title>
+    <link rel="stylesheet" href="/static/css/detail.css">
+</head>
+<body>
+    <header>
+        <h1>{{.Détailsdelaressource}}</h1>
+    </header>
+    <div class="container" id="resourceDetails">
+        <!-- Les détails de la ressource seront insérés ici -->
+    </div>
+   
+    <a class="h-link" href="favoris.html">
+        <button type="submit">Ajouter aux favoris</button>
+    </a>
+
+</body>
+</html>
+{{end}}

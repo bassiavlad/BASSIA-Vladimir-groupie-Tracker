@@ -1,0 +1,62 @@
+{{define "index"}}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil - Youssoupha</title>
+    <link rel="stylesheet" href="static/css/indix.css">
+    <title>Accueil</title>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="cont">
+              <a class="h-link" href="Home">
+                <img class="home" src="../static/img/index/kig.jpg" alt="Home" />
+                <p>ACCUEIL</p>
+              </a>
+            </div>
+        <div class="cont">
+          <a class="h-link" href="/categories">
+            <img class="CATEGORIES" src="../static/img/index/categories.png" alt="Categories" />
+            <a href="catégorie.html">LES CATEGORIES </a>
+          </a>
+          </div>
+  
+          <a class="h-link" href="/admin">
+            <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
+            <a href="artiste.html">Artiste YOUSSOUPHA</a>
+          </a>
+        </div>
+
+            <div class="menu">
+                <form action="" method="">
+                  <input type="text" id="search" name="q" placeholder="la musique de Youssoupha" />
+                  <a class="h-link" href="/recherche">
+                    <button type="submit">afficher</button>
+                </a>
+
+                </form>
+
+        <h1>API Spotify - Youssoupha</h1>
+    </header>
+    <div class="container">
+        <div class="bio">
+          
+          <p>Jeunesse et débuts Youssoupha est né le 29 août 1979 à Kinshasa, au Zaïre, <br> (aujourd'hui république démocratique du Congo).</br> Son père est le musicien zaïrois Tabu Ley Rochereau . Sa mère est d'origine sénégalaise . Il est également l'oncle de la rappeuse belge Shay (Vanessa Lesnicki)
+          </p>
+            <!-- Les informations sur l'artiste seront insérées ici -->
+        </div>
+
+        <a class="h-link" href="collection.html">
+          <button type="submit">Aller voir Album</button>
+      </a>
+
+    </div>
+    <footer>
+        <p>Réalisé avec l'API Spotify</p>
+    </footer>
+</body>
+</html>
+{{end}}

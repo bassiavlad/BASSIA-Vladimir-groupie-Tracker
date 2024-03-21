@@ -1,0 +1,47 @@
+{{define "catégorie"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/categorie.css">
+    <title>Ma Playlist Musicale</title>
+</head>
+<body>
+    <h1>Catégoriser une musique</h1>
+    <form id="categoryForm">
+        <label for="songTitle">Titre de la musique :</label>
+        <input type="text" id="songTitle" name="songTitle">
+        <label for="category">Catégorie :</label>
+        <select id="category" name="category">
+            <option value="french hip hop">french hip hop</option>
+            <option value="pop urbaine">pop urbaine</option>
+            <option value="rap conscient">rap conscient</option>
+            <option value="Autre">Autre</option>
+        </select>
+        <button type="submit">Catégoriser</button>
+    </form>
+
+    <script>
+        document.getElementById('categoryForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var song = document.getElementById('songTitle').value;
+            var category = document.getElementById('category').value;
+            console.log('Musique', song, 'catégorisée comme', category);
+            // Ici, vous pouvez envoyer les données au backend pour les traiter avec Go
+        });
+    </script>
+
+<div class="pagination">
+    <button id="prevPage">Précédent</button>
+    <span id="currentPage">Page 1</span>
+    <button id="nextPage">Suivant</button>
+</div>
+
+<a class="h-link" href="ListAlbums.html">
+    <button type="submit">Aller voir Albums </button>
+</a>
+ 
+</body>
+</html>
+{{end}}

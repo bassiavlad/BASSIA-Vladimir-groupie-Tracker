@@ -1,0 +1,35 @@
+{{define "recherche"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/recherche.css">
+    <title>Recherche de musique</title>
+</head>
+<body>
+    <h1>Recherche de musique</h1>
+    <form action="/search" method="post">
+        <label for="searchQuery">Rechercher une musique :</label>
+        <input type="text" id="searchQuery" name="searchQuery">
+        <button type="submit">Rechercher</button>
+    </form>
+    <div id="searchResults">
+        {{range .Results}}
+            <h2>{{.Title}}</h2>
+            <p><strong>{{.Artiste}} :</strong> {{.Artist}}</p>
+            <p><strong>{{.Genre}} :</strong> {{.Genre}}</p>
+            <hr>
+        {{end}}
+    </div>
+
+    <a class="h-link" href="tracklist.html">
+        <button type="submit">afficher</button>
+    </a>
+
+
+    <a href="tracklist.html">My musique </a> 
+
+</body>
+</html>
+{{end}}

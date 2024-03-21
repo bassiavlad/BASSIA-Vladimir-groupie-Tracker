@@ -1,0 +1,58 @@
+/* Styles pour la mise en page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1DB954;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Styles pour la liste des favoris */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resource {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.resource h2 {
+    margin-top: 0;
+}
+
+.resource p {
+    margin-bottom: 5px;
+}
+
+/* Styles pour les boutons */
+.button {
+    background-color: #1DB954;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.classe {
+    background-image: url('musi.jpg');
+    /* Autres styles */
+    width: 200px; /* Largeur de l'image */
+    height: 200px; /* Hauteur de l'image */
+}

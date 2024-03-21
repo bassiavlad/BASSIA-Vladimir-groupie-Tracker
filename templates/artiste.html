@@ -1,0 +1,27 @@
+{{define "artiste"}}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/collction.css">
+    <title>Artiste Musicien YOUSSOUPHA</title>
+</head>
+
+<body> 
+    <h1> PRESENTATION DE L'ARTISTE  MUSICIEN YOUSSOUPHA </h1>
+    <p>{{.Albums}}</p>
+    <p>{{.Id}}</p>
+    <p>{{.Name}}</p>
+    <p>{{.Type}}</p>
+    <p>{{.Dateofbirth}}</p>
+    <p>{{.Nationality}}</p>
+</body>
+
+<a class="h-link" href="ListAlbums.html">
+    <button type="submit">Aller voir Albums </button>
+</a>
+
+</html>
+{{end}}
